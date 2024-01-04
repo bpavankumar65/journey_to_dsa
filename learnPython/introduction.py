@@ -32,6 +32,45 @@ print(f'{x:.2f}') # 10.12
 
 
 # numbers and integers
+#control flow
+if "pavan" in new_string:
+    print("pavan is there")
+elif "van" in new_string:
+    print("still pavan")
+else:
+    print(new_string)
+# while
+
+while(True):
+    print('Navap')
+    break
+
+def try_while():
+    count = 0
+    dict = {}
+    while(count<10):
+        dict[str(count)] = 'a'
+        count += 1
+    dict['2'] = 'b'
+    print(dict)
+
+#try_while()
+
+# for-loop
+example_array = [10]*5
+sample = {}
+counter = 0
+for i in example_array:
+    sample[str(counter)] = i+1
+    counter +=1
+for _ in range(0,10):
+    print('.', end='')
+    print()
+
+
+#for i in range(10, 0, -1): _________ prints 10,9,8,7,6,5,4,3,2,1,
+
+print(sample)
 
 
 

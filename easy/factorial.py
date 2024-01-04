@@ -20,12 +20,12 @@ def factorial_second(num):
 
     pass
 
+
 def factorial_third(num):
     if num != 0:
-        return num*factorial_third(num-1)
+        return num * factorial_third(num - 1)
     else:
         return 1
-
 
 
 if __name__ == "__main__":
