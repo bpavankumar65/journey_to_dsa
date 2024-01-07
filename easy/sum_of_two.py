@@ -26,3 +26,21 @@ class Solution:
                 return [i, seen[complement]]
             seen[num] = i
             i += 1
+
+
+def sum_f_two(num_list, target):
+    i = 0
+    seen = {}
+    list_of_subsets = []
+    while i < len(num_list):
+        complement = target - num_list[i]
+        if complement in seen:
+            print(complement, seen)
+            list_of_subsets.append([(i, seen[complement])])
+        seen[num_list[i]] = i
+        print(i, len(num_list))
+        i += 1
+    return list_of_subsets
+
+if __name__ == "__main__":
+    print(sum_f_two([1,2,3,3,4,5,6], 6))
